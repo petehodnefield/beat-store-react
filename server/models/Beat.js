@@ -13,6 +13,20 @@ const beatSchema = new Schema({
         required: true,
         trim: true
     },
+    key: {
+        type: String,
+        required: true,
+        trim: true
+    },
+    genre: {
+        type: String,
+        required: true,
+        trim: true
+    },
+    datePosted: {
+        type: Date,
+        default: Date.now()
+    }
 })
 
 const Beat = mongoose.model('Beat', beatSchema)

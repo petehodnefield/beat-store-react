@@ -4,7 +4,10 @@ const typeDefs = gql `
     type Beat {
         _id: ID,
         name: String
-        tempo: String
+        tempo: String,
+        key: String,
+        genre: String,
+        datePosted: String
     }
 
     type Query {
