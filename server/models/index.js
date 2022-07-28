@@ -1,4 +1,5 @@
 const Beat = require('./Beat');
+const User = require('./User');
 
 
-module.exports = { Beat };
+module.exports = { Beat, User };

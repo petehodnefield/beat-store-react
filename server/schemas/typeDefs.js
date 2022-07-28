@@ -10,8 +10,16 @@ const typeDefs = gql `
         datePosted: String
     }
 
+    type User {
+        _id: ID
+        username: String
+        email: String
+        password: String
+    }
+
     type Query {
-        beats: [Beat]
+        beats: [Beat],
+        users: [User]
     }
 `
 
