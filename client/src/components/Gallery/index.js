@@ -1,11 +1,11 @@
 import React from "react";
-import BeatList from "../BeatList";
+import LoopList from "../LoopList";
 
 function Gallery(){
     return (
         <section className="gallery container">
-            <h2 className="section-header">Beats</h2>
-            <BeatList></BeatList>
+            <h2 className="section-header">Loops</h2>
+            <LoopList></LoopList>
         </section >
     )
 }
