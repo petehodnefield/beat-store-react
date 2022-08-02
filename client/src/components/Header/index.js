@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header() {
     return(
-        <header class="header">
+        <header className="header">
             <h1>mongamonga_</h1>
             <p>Certified Smokeable</p>
         </header>
