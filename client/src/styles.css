@@ -107,13 +107,19 @@ h3 {
 
 .play-btn {
     position: absolute;
-    top: 50%;
-    left: 50%;
-
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    filter: invert(94%);
 }
 .play-btn:hover {
     cursor: pointer;
     opacity: .7;
+    filter: drop-shadow(5px 5px 20px var(--secondary));
+    transition: .4s;
+
+
 }
 
 /* Contact form style begin */
@@ -172,9 +178,6 @@ textarea {
 footer {
     text-align: center;
     background-color: var(--fourth);
-    position: fixed;
-    bottom: 0;
-    height: 100px;
     width: 100%;
 }
 .icon-list {

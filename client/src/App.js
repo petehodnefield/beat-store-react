@@ -8,10 +8,12 @@ import './styles.css'
 function App() {
   return (
     <div className="App">
-      <Header></Header>
-      <Gallery></Gallery>
-      <ContactForm></ContactForm>
-      {/* <Footer></Footer> */}
+      <main>
+        <Header></Header>
+        <Gallery></Gallery>
+        <ContactForm></ContactForm>
+      </main>
+      <Footer></Footer>
     </div>
   );
 }

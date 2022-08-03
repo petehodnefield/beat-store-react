@@ -13,6 +13,10 @@ function LoopList(){
 
     const [currentPack, setCurrentPack] = useState('')
 
+    const [isBOFPlaying, setIsBOFPlaying] = useState(false)
+    const [isCBPlaying, setIsCBPlaying] = useState(false)
+    const [isGHPlaying, setIsGHPlaying] = useState(false)
+
     const loopPacks = [
         {
             name: "Bowl of Fruit",
@@ -43,8 +47,38 @@ function LoopList(){
     const setPack = (audio) => {
         console.log('audio', audio)
         setCurrentPack(audio)
+        console.log("current pack", currentPack)
 
     }
+
+    const startBOFPlaying = (audio) => {
+        setIsBOFPlaying(true)
+        startAudio(audio)
+    }
+
+    const stopBOFPlaying = (audio) => {
+        setIsBOFPlaying(false)
+        stopAudio(audio)
+    }
+    const startCBPlaying = (audio) => {
+        setIsCBPlaying(true)
+        startAudio(audio)
+    }
+
+    const stopCBPlaying = (audio) => {
+        setIsCBPlaying(false)
+        stopAudio(audio)
+    }
+    const startGHPlaying = (audio) => {
+        setIsGHPlaying(true)
+        startAudio(audio)
+    }
+
+    const stopGHPlaying = (audio) => {
+        setIsGHPlaying(false)
+        stopAudio(audio)
+    }
+    console.log(currentPack)
     
     const startAudio = (audio) => {
 
@@ -71,7 +105,7 @@ function LoopList(){
             <audio className="audio-player">
                 
             </audio>
-            {loopPacks.map((pack) => (
+            {/* {loopPacks.map((pack) => (
                 <div onMouseOver={() => setPack(pack.audio)} className="card">
                     <div className="img-container">
                         <img
@@ -93,7 +127,89 @@ function LoopList(){
                
 
                 </div>
-            ))}
+            ))} */}
+             <div onMouseOver={() => setPack(loopPacks[0].audio)} className="card">
+                    <div className="img-container">
+                        <img
+                            src={loopPacks[0].img}
+                            alt='Yaaya'
+                            className="pack-img"key={loopPacks[0].name}
+                        />
+                        {!isBOFPlaying ? (
+                            <img
+                            src={playIcon}
+                            className="play-btn"
+                            onClick={() => startBOFPlaying()}
+                            />  
+                        ): (
+                            <img
+                            src={pauseIcon}
+                            className="play-btn"
+                            onClick={() => stopBOFPlaying()}
+                            />  
+                            )}
+                    </div>
+                    <h2 className="section-header beat-header">{loopPacks[0].name}</h2>
+                    <h3 className="beat-details">Genre: {loopPacks[0].genre}</h3>
+               
+
+                </div>
+             <div onMouseOver={() => setPack(loopPacks[1].audio)} className="card">
+                    <div className="img-container">
+                        <img
+                            src={loopPacks[1].img}
+                            alt='Yaaya'
+                            className="pack-img"key={loopPacks[1].name}
+                        />
+                         {!isCBPlaying ? (
+                            <img
+                            src={playIcon}
+                            className="play-btn"
+                            onClick={() => startCBPlaying()}
+                            />  
+                        ): (
+                            <img
+                            src={pauseIcon}
+                            className="play-btn"
+                            onClick={() => stopCBPlaying()}
+                            />  
+                            )}  
+                       
+                        
+                    </div>
+                    <h2 className="section-header beat-header">{loopPacks[1].name}</h2>
+                    <h3 className="beat-details">Genre: {loopPacks[1].genre}</h3>
+               
+
+                </div>
+             <div onMouseOver={() => setPack(loopPacks[2].audio)} className="card">
+                    <div className="img-container">
+                        <img
+                            src={loopPacks[2].img}
+                            alt='Yaaya'
+                            className="pack-img"key={loopPacks[2].name}
+                        />
+                            {!isGHPlaying ? (
+                                    <img
+                                    src={playIcon}
+                                    className="play-btn"
+                                    onClick={() => startGHPlaying()}
+                                    />  
+                                ): (
+                                    <img
+                                    src={pauseIcon}
+                                    className="play-btn"
+                                    onClick={() => stopGHPlaying()}
+                                    />  
+                                    )}                         
+                            
+                        
+                    </div>
+                    <h2 className="section-header beat-header">{loopPacks[2].name}</h2>
+                    <h3 className="beat-details">Genre: {loopPacks[2].genre}</h3>
+               
+
+                </div>
         </div>
     )
 }
