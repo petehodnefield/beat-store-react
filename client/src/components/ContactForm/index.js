@@ -8,6 +8,8 @@ const ContactForm = () => {
         emailjs.sendForm('service_op0chih', 'template_u9me0ga', event.target, 'ySIVZl7xYdNJMWPtu')
             .then(result => console.log(result.text))
             .catch(err => console.log(err))
+        
+        
     }
 
     return (
