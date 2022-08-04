@@ -3,6 +3,7 @@ import youtube from '../../assets/icons/logo-youtube.svg'
 import instagram from '../../assets/icons/logo-instagram.svg'
 import tiktok from '../../assets/icons/logo-tiktok.svg'
 
+
 function Footer() {
 
     const getDate = () => {

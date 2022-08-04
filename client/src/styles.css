@@ -55,6 +55,9 @@ h3 {
     background-color: var(--primary);
     padding: 0 0 .5rem;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header-text {
@@ -63,6 +66,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .header-img-container {
     height: 60px;
@@ -232,6 +236,7 @@ footer {
 }
 
 .icon:hover {
+    cursor: pointer;
     color: var(--primary);
     transition: .2s;
     transition-timing-function: ease-in-out;
