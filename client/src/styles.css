@@ -3,12 +3,12 @@
 }
 
 :root {
-    --primary: #41729F;
-    --secondary: #C3E0E5;
-    --third: #5885AF;
-    --fourth: #274472;
-    --white: #ffffff;
-    --black: #111111;
+    --primary: #5dbcf7;
+    --secondary: #262626;
+    --third: #F2A0CD;
+    --fourth: #D94343;
+    --white: #F2F2F2;
+    --black: #012623;
 }
 
 ::placeholder {
@@ -28,10 +28,15 @@ body {
     color: var(--white);
     background-color: var(--primary);
     text-align: center;
+    font-family: 'Lato', sans-serif;
+
 }
 
 h1{
-    font-size: 5rem;
+    font-size: 6rem;
+    font-weight: 700;
+    text-shadow: 0 0 1px var(--black);
+    margin: 1rem 0 .2rem;
 }
 
 h2 {
@@ -48,11 +53,24 @@ h3 {
 /* Header style begin */
 .header{
     background-color: var(--primary);
-    box-shadow: 0 10px 20px -10px  var(--black);
     padding: 0 0 .5rem;
 }
 
-
+.header-text {
+    font-size: 2rem;
+    margin-top: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-img-container {
+    height: 60px;
+    width: 60px;
+}
+.header-img {
+    width: 60px;
+    height: 60px;
+}
 
 .container {
     display: flex;
@@ -68,16 +86,16 @@ h3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 5px;
+    padding: 0 1rem;
 }
 
 .card {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: var(--fourth);
+    background-color: var(--secondary);
     padding: 1rem .5rem;
     border-radius: 15px;
-    box-shadow: 0px 0px 10px var(--secondary);
     position: relative;
     max-height: 500px ;
 }
@@ -103,6 +121,9 @@ h3 {
 .pack-img {
     width: 100%;
     height: 100%;
+    border-radius: 10px;
+    padding: 0 .5rem;
+
 }
 
 .play-btn {
@@ -124,7 +145,6 @@ h3 {
 
 /* Contact form style begin */
 .form-container {
-    background-color: var(--secondary);
     width: 60%;
     margin: 4rem;
     border-radius: 40px;
@@ -132,7 +152,7 @@ h3 {
 }
 
 .form-container:hover {
-    transform: translateY(-1%);
+    transform: translateY(-.8%);
     transition: 1s;
 }
 
@@ -177,23 +197,40 @@ textarea {
 /* Footer Style Begin */
 footer {
     text-align: center;
-    background-color: var(--fourth);
+    background-color: var(--secondary);
     width: 100%;
 }
-.icon-list {
-    padding: 0;
+
+.social {
+    text-align: center;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.icon-list a {
-    padding: 0 .5rem;
-}
 .icon {
     width: 50px;
+    font-size: 40px;
     color: var(--fourth);
+    margin: 0 .5rem;
 }
-.filter-icon{
-    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+
+.icon:hover {
+    color: var(--primary);
+    transition: .2s;
+    transition-timing-function: ease-in-out;
 }
+
+.tiktok {
+    font-size: 38px;
+}
+
+.copyright {
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+}
+
 
 /* Button styling begin */
 .btn {
