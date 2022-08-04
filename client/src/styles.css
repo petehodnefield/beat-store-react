@@ -38,6 +38,21 @@ h1{
     text-shadow: 0 0 1px var(--black);
     margin: 1rem 0 .2rem;
 }
+h1:hover {
+    text-shadow: 0 0 3px var(--white);
+    transition: .15s;
+}
+
+h1 a {
+    color: var(--white);
+}
+
+h1 a:hover {
+    opacity: .8;
+    color: var(--secondary);
+    transition: .15s;
+
+}
 
 h2 {
     font-size: 4rem;
@@ -172,6 +187,10 @@ a {
     margin: 4rem;
     border-radius: 40px;
     box-shadow: 1px 1px 5px 1px var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .form-container:hover {
@@ -187,6 +206,15 @@ a {
     text-align: center;
 }
 
+.form-header {
+    border-bottom: 1px solid var(--secondary);
+    border-radius: 2px;
+    width: 50%;
+    font-size: 5rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
 .contact-form input {
     text-align: center;
     border-radius: 20px;
@@ -195,13 +223,16 @@ a {
     margin-bottom: 1rem;
     border: 1px solid var(--black);
     color: var(--black);
-    padding: .2rem 3rem;
+    padding: .5rem 3rem;
+    width: 100%;
 }
 
 .label {
-    color: var(--black);
-    font-size: 2.5rem;
+    color: var(--white);
+    text-shadow: 0 0 1px var(--black);
+    font-size: 3rem;
     margin-bottom: .2rem;
+    font-weight: 700;
 }
 
 textarea {
@@ -212,7 +243,7 @@ textarea {
 }
 
 .contact-form input:focus, .contact-form textarea:focus {
-    background-color: var(--primary);
+    background-color: var(--secondary);
     transition: .6s;
     color: var(--white);
 }
@@ -222,11 +253,12 @@ footer {
     text-align: center;
     background-color: var(--secondary);
     width: 100%;
+    padding: 1.5rem 0 .5rem;
 }
 
 .social {
     text-align: center;
-    height: 100px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -262,7 +294,7 @@ footer {
 
 .copyright {
     font-size: 2rem;
-    padding-bottom: 1.5rem;
+    margin-top: 1rem;
 }
 
 
@@ -270,8 +302,7 @@ footer {
 .btn {
     border-radius: 20px;
     border: none;
-    font-size: 3rem;
-    padding: .2rem 5rem;
+    padding: .5rem 5rem;
     margin: 1.5rem 0;
 }
 
@@ -281,11 +312,15 @@ footer {
 }
 
 .submit-btn {
-    background-color: var();
+    background-color: var(--fourth);
     border: 1px solid var(--black);
+    color: var(--white);
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 300;
 }
 .submit-btn:hover {
     background-color: var(--secondary);
     border: 1px solid var(--white);
-    transition: .4s;
+    transition: .25s;
 }
