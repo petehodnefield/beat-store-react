@@ -54,6 +54,7 @@ h3 {
 .header{
     background-color: var(--primary);
     padding: 0 0 .5rem;
+    position: relative;
 }
 
 .header-text {
@@ -70,6 +71,20 @@ h3 {
 .header-img {
     width: 60px;
     height: 60px;
+}
+
+.honcho-icon {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    bottom: 0;    
+}
+
+.morie-icon {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    bottom: 0;    
 }
 
 .container {
