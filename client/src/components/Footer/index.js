@@ -1,7 +1,7 @@
 import React from "react";
-import youtube from '../../assets/icons/logo-youtube.svg'
-import instagram from '../../assets/icons/logo-instagram.svg'
-import tiktok from '../../assets/icons/logo-tiktok.svg'
+import {Link} from 'react-router-dom'
+import LoopLicense from "../LoopLicense";
+
 
 
 function Footer() {
@@ -24,7 +24,7 @@ function Footer() {
                         <i className="fa-brands fa-tiktok icon tiktok"></i>
                     </a>
             </div>
-            <p><a>Royalty Free Lease</a></p>
+            <a className="license-link" href="http://localhost:3000/loop-license">Royalty Free License</a>
             <p className="copyright">©{getDate()} MongaMongaBeats LLC</p>
         </footer>
     )
