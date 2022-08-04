@@ -7,7 +7,7 @@ function Gallery(){
         <section className="gallery container">
             <h2 className="section-header">Loops</h2>
             <LoopList></LoopList>
-            <Link to='/airbit' element={<AirbitStore/>}>Airbit</Link>
+            <Link className="a-link btn" to='/airbit' element={<AirbitStore/>}>Airbit Store</Link>
         </section >
     )
 }

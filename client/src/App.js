@@ -10,6 +10,7 @@ import './App.css';
 import './styles.css'
 import LoopLicense from './components/LoopLicense';
 import AirbitStore from './components/AirbitStore';
+import FormSubmitted from './pages/FormSubmitted'
 
 
 
@@ -32,6 +33,10 @@ function App() {
                 <Route
                   path="airbit"
                   element={<AirbitStore/>}
+                />
+                <Route 
+                  path='/thank-you'
+                  element={<FormSubmitted/>}
                 />
               </Routes>    
             </div>

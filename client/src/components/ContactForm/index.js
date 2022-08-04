@@ -1,15 +1,17 @@
 import React from "react";
 import emailjs from "emailjs-com"
+import {Link} from 'react-router-dom'
+import FormSubmitted from "../../pages/FormSubmitted";
 const ContactForm = () => {
 
-    const formHandler = (event) => {
+    const formHandler = async(event) => {
         event.preventDefault()
 
-        emailjs.sendForm('service_op0chih', 'template_u9me0ga', event.target, 'ySIVZl7xYdNJMWPtu')
+        await emailjs.sendForm('service_op0chih', 'template_u9me0ga', event.target, 'ySIVZl7xYdNJMWPtu')
             .then(result => console.log(result.text))
             .catch(err => console.log(err))
         
-        
+        window.location.assign('/thank-you')
     }
 
     return (

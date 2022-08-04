@@ -67,6 +67,10 @@ a {
     color: var(--secondary);
 }
 
+p {
+    font-size: 2.5rem;
+}
+
 .section-header{
     text-shadow: 0 0 1px var(--black);
 }
@@ -129,6 +133,9 @@ a {
     padding: 0 1rem;
 }
 
+.gallery {
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -179,8 +186,20 @@ a {
     opacity: .7;
     filter: drop-shadow(5px 5px 20px var(--secondary));
     transition: .4s;
+}
 
+.a-link {
+    background-color: var(--fourth);
+    font-size: 3rem;
+    margin-top: 1.5rem;
+    border-radius: 20px;
+    width: 40%;
+    color: var(--white);
+}
 
+.a-link:hover {
+    background-color: var(--secondary);
+    transition: .25s;
 }
 
 /* Contact form style begin */
@@ -317,6 +336,11 @@ footer {
 
 .warning {
     margin: 2rem 2rem 6rem;
+}
+
+/* FormSubmitted style begin */
+.thank-you-container {
+    height: 100vh;
 }
 
 /* Button styling begin */
