@@ -43,19 +43,20 @@ h1:hover {
     transition: .15s;
 }
 
-h1 a {
+.header-h1 {
     color: var(--white);
 }
 
-h1 a:hover {
+.header-h1:hover {
     opacity: .8;
     color: var(--secondary);
     transition: .15s;
 
 }
 
+
 h2 {
-    font-size: 4rem;
+    font-size: 5rem;
 }
 h3 {
     font-size: 2.5rem;
@@ -63,6 +64,7 @@ h3 {
 
 a {
     text-decoration: none;
+    color: var(--secondary);
 }
 
 .section-header{
@@ -300,6 +302,22 @@ footer {
     margin-top: 1rem;
 }
 
+/* License styling begin */
+.license-header {
+    margin-bottom: 1rem;
+}
+.license-text {
+    font-size: 2.5rem;
+    margin: 0 0 1rem;
+}
+
+.license-download:hover {
+    color: var(--fourth);
+}
+
+.warning {
+    margin: 2rem 2rem 6rem;
+}
 
 /* Button styling begin */
 .btn {
@@ -312,6 +330,8 @@ footer {
 .btn:hover {
     cursor: pointer;
 }
+
+.lic
 
 .submit-btn {
     background-color: var(--secondary);

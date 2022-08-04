@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import './App.css';
 import './styles.css'
 import LoopLicense from './components/LoopLicense';
+import AirbitStore from './components/AirbitStore';
 
 
 
@@ -27,6 +28,10 @@ function App() {
                 <Route
                   path="loop-license"
                   element={<LoopLicense/>}
+                />
+                <Route
+                  path="airbit"
+                  element={<AirbitStore/>}
                 />
               </Routes>    
             </div>
