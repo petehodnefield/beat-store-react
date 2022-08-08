@@ -11,6 +11,8 @@ import './styles.css'
 import LoopLicense from './components/LoopLicense';
 import AirbitStore from './components/AirbitStore';
 import FormSubmitted from './pages/FormSubmitted'
+import ImageSlider from './components/ImageSlider';
+import { SliderData } from './components/SliderData';
 
 
 
