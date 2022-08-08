@@ -1,9 +1,18 @@
 import React from "react";
 
-function AudioPlayer() {
+function AudioPlayer({audioElem, isPlaying, setIsPlaying}) {
+
+    const PlayPause = () => {
+        setIsPlaying(!isPlaying)
+    }
     return (
-        <div>
+        <div className="play-pause-container">
+            {!isPlaying ? (<i className="fa-solid fa-play play-pause play-btn" onClick={PlayPause}></i>) : (
+                <i className="fa-solid fa-pause play-pause pause-btn"onClick={PlayPause}></i> 
+
+            )}
             
+             
         </div>
     )
 }
