@@ -15,7 +15,7 @@ const ContactForm = () => {
     }
 
     return (
-        <div className="container">
+        <div className="container xtra-padding">
             <div className="form-container">
                 <h2 className="section-header form-header">Custom Loops</h2>
                 <form onSubmit={(e) => formHandler(e)} className="contact-form">

@@ -72,7 +72,7 @@ const ImageSlider = ({slides}) => {
 
     return (
         <section className='container carousel-container'>
-            <h2 className='section-header'>Loop Packs (free)</h2>
+            <h2 className='section-header carousel-header'>Loop Packs (free)</h2>
             <div className='slider'>
             <audio id='audioPlayer' className='audio-player' src={currentPackAudio.name} ref={audioElem}></audio>
             <AudioPlayer loopAudio={loopAudio} setLoopAudio={setLoopAudio} isPlaying={isPlaying} setIsPlaying={setIsPlaying} audioElem={audioElem}/>
