@@ -32,7 +32,7 @@ const ContactForm = () => {
                     <input type="url" name="reference_track" ></input>
 
                     <label className="label">Additional notes / requests:</label>
-                    <textarea name="message" cols="30" rows="4"></textarea>
+                    <textarea name="message"></textarea>
                     <button className="btn submit-btn" type="submit">SUBMIT</button>
                 </form>
             </div>

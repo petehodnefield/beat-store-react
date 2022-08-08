@@ -33,7 +33,7 @@ body {
 }
 
 h1{
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 700;
     text-shadow: 0 0 1px var(--black);
     margin: 1rem 0 .2rem;
@@ -56,7 +56,7 @@ h1:hover {
 
 
 h2 {
-    font-size: 5rem;
+    font-size: 4rem;
 }
 h3 {
     font-size: 2.5rem;
@@ -74,6 +74,7 @@ p {
 .section-header{
     text-shadow: 0 0 1px var(--black);
     margin-bottom: 1rem;
+    margin-top: .5rem;
 }
 
 /* Header style begin */
@@ -89,6 +90,7 @@ p {
 .header-text {
     font-size: 2rem;
     margin-top: .5rem;
+    margin-bottom: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,14 +107,14 @@ p {
 
 .honcho-icon {
     position: absolute;
-    height: 100%;
+    height: 35%;
     left: 0;
     bottom: 0;    
 }
 
 .morie-icon {
     position: absolute;
-    height: 100%;
+    height: 35%;
     right: 0;
     bottom: 0;    
 }
@@ -131,8 +133,8 @@ p {
 .home-container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 80vh;
     
 }
 
@@ -191,7 +193,7 @@ p {
     font-size: 3rem;
     margin-top: 1.5rem;
     border-radius: 20px;
-    width: 40%;
+    width: 90%;
     color: var(--white);
 }
 
@@ -202,7 +204,7 @@ p {
 
 /* Contact form style begin */
 .form-container {
-    width: 60%;
+    width: 90%;
     margin: 4rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -20px inset;
     border-radius: 40px;
@@ -231,10 +233,11 @@ p {
 .form-header {
     border-bottom: 1px solid var(--secondary);
     border-radius: 2px;
-    width: 50%;
+    width: 100%;
     font-size: 5rem;
-    padding-bottom: 1.5rem;
+    padding: 0 1rem 1.5rem;
     margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 .contact-form input {
@@ -246,7 +249,6 @@ p {
     border: 1px solid var(--black);
     color: var(--black);
     padding: .5rem 3rem;
-    width: 100%;
 }
 
 .label {
@@ -287,8 +289,8 @@ footer {
 }
 
 .icon {
-    width: 50px;
-    font-size: 40px;
+    width: 60px;
+    font-size: 50px;
     color: var(--fourth);
     margin: 0 .5rem;
 }
@@ -301,7 +303,7 @@ footer {
 }
 
 .tiktok {
-    font-size: 38px;
+    font-size: 48px;
 }
 
 .license-link {
@@ -347,24 +349,19 @@ footer {
     border: none;
     padding: .5rem 5rem;
     margin: 1.5rem 0;
+    color: var(--white);
+    font-size: 2.5rem;
+    background-color: var(--fourth);
 }
 
 .btn:hover {
     cursor: pointer;
 }
 
-.lic
 
-.submit-btn {
-    background-color: var(--secondary);
-    border: 1px solid var(--black);
-    color: var(--white);
-    text-transform: capitalize;
-    font-size: 2rem;
-    font-weight: 300;
-}
+
 .submit-btn:hover {
-    background-color: var(--fourth);
+    background-color: var(--secondary);
     border: 1px solid var(--white);
     transition: .25s;
 }
@@ -378,7 +375,7 @@ footer {
     align-items: center;
     border: 3px solid var(--secondary);
     border-radius: 15px;
-    max-width: 600px;
+    width: 90%;
 }
 
 .slider:hover {
@@ -398,8 +395,10 @@ footer {
 
 .carousel-img {
     width: 100%;    
-    height: 600px;
+    height: 100%;
     border-radius: 10px;
+    min-height: 300px
+
 }
 
 .right-arrow {
