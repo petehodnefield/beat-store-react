@@ -267,6 +267,17 @@ textarea {
     resize: none;
 }
 
+.form-disclaimer {
+    font-size: 4rem;
+    padding: 4rem 4rem 0;
+    margin: 0;
+}
+
+.form-warning {
+    color: rgb(255, 0, 0);
+    font-size: 2rem;
+}
+
 .contact-form input:focus, .contact-form textarea:focus {
     background-color: var(--secondary);
     transition: .6s;
