@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import { Link } from "react-router-dom";
 import FormSubmitted from "../../pages/FormSubmitted";
+import FormWholePage from "../../pages/FormWholePage";
 const ContactForm = () => {
   const [errorMessage, setErrorMessage] = useState("");
   function validateEmail(email) {
@@ -53,7 +54,9 @@ const ContactForm = () => {
   return (
     <div className="container xtra-padding">
       <div className="form-container">
-        <h2 className="section-header form-header">Custom Loops</h2>
+        <Link to="/custom-loops">
+          <h2 className="section-header form-header">Custom Loops</h2>
+        </Link>
         <form onSubmit={(e) => formHandler(e)} className="contact-form">
           <label className="label">*Name</label>
           <input type="text" name="from_name" maxLength="30" required></input>
