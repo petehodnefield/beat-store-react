@@ -3,6 +3,8 @@ import emailjs from "emailjs-com";
 import { Link } from "react-router-dom";
 import FormSubmitted from "../../pages/FormSubmitted";
 import FormWholePage from "../../pages/FormWholePage";
+// require("dotenv").config();
+
 const ContactForm = () => {
   const [errorMessage, setErrorMessage] = useState("");
   function validateEmail(email) {
@@ -40,10 +42,10 @@ const ContactForm = () => {
 
     await emailjs
       .sendForm(
-        "service_op0chih",
-        "template_u9me0ga",
+        process.env.REACT_APP_SERVICE_NUMBER,
+        process.env.REACT_APP_TEMPLATE_NUMBER,
         event.target,
-        "ySIVZl7xYdNJMWPtu"
+        process.env.REACT_APP_MY_ID
       )
       .then((result) => console.log(result.text))
       .catch((err) => console.log(err));
@@ -54,7 +56,7 @@ const ContactForm = () => {
   return (
     <div className="container xtra-padding">
       <div className="form-container">
-        <Link to="/custom-loops">
+        <Link className="link-header" to="/custom-loops">
           <h2 className="section-header form-header">Custom Loops</h2>
         </Link>
         <form onSubmit={(e) => formHandler(e)} className="contact-form">
