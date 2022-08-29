@@ -26,6 +26,7 @@ const ImageSlider = ({ slides }) => {
   const [currentPackAudio, setCurrentPackAudio] = useState(AudioData[0]);
 
   useEffect(() => {
+    console.log(audioElem.current);
     if (isPlaying) {
       audioElem.current.play();
     } else {
@@ -35,12 +36,8 @@ const ImageSlider = ({ slides }) => {
 
   const audioElem = useRef(cbAudio);
   const length = slides.length;
-  console.log("audioEl", audioElem);
 
-  useEffect(() => {
-    console.log(audioElem.current);
-    console.log(currentPackAudio);
-  }, [current]);
+  useEffect(() => {}, [current]);
 
   const getAudio = () => {
     setCurrentPackAudio(AudioData[current]);
@@ -51,12 +48,23 @@ const ImageSlider = ({ slides }) => {
     setIsPlaying(false);
     setCurrent(current === length - 1 ? 0 : current + 1);
     // getAudio();
-    setCurrentPackAudio(AudioData[current]);
+    console.log("current", current);
+    if (current === 2) {
+      setCurrentPackAudio(AudioData[0]);
+    } else {
+      setCurrentPackAudio(AudioData[current + 1]);
+    }
   };
 
   const previousSlide = () => {
     setIsPlaying(false);
     setCurrent(current === 0 ? length - 1 : current - 1);
+    console.log("current", current);
+    if (current === 0) {
+      setCurrentPackAudio(AudioData[2]);
+    } else {
+      setCurrentPackAudio(AudioData[current - 1]);
+    }
   };
 
   if (!Array.isArray(slides) || slides.length <= 0) {
