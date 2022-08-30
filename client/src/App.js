@@ -27,6 +27,7 @@ function App() {
         <div>
           <Routes>
             <Route path="/" element={<Home></Home>} />
+            <Route path="/beat-store-react/" element={<Home></Home>} />
             <Route path="loop-license" element={<LoopLicense />} />
             <Route path="airbit" element={<AirbitStore />} />
             <Route path="/thank-you" element={<FormSubmitted />} />
