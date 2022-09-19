@@ -32,6 +32,13 @@ body {
     font-family: 'Lato', sans-serif;
 
 }
+.App {
+  min-height: 100vh;
+  position: relative;
+}
+.padding-bottom {
+  padding-bottom: 175px;
+}
 
 h1{
     font-size: 6.3rem;
@@ -301,7 +308,10 @@ textarea {
 
 /* Footer Style Begin */
 footer {
+    bottom: 0;
+    position: absolute;
     text-align: center;
+    height: 175px;
     background-color: var(--secondary);
     width: 100%;
     padding: 1.5rem 0 .5rem;

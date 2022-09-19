@@ -24,7 +24,7 @@ function App() {
     <Router>
       <div className="App">
         <Header></Header>
-        <div>
+        <div className="padding-bottom">
           <Routes>
             <Route path="/" element={<Home></Home>} />
             <Route path="/beat-store-react/" element={<Home></Home>} />
