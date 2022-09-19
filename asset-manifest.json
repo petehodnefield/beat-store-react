@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.ef68903a.css",
-    "main.js": "/static/js/main.b98db02b.js",
-    "static/js/787.e135ee95.chunk.js": "/static/js/787.e135ee95.chunk.js",
-    "static/media/cbPreview.mp3": "/static/media/cbPreview.b829af31d0679590f06c.mp3",
-    "static/media/watermelonPreview.mp3": "/static/media/watermelonPreview.23eef2a539efa10adbfe.mp3",
-    "static/media/bofPreview.mp3": "/static/media/bofPreview.b0d8ffdd4d03b3ccb7e2.mp3",
-    "static/media/gorillaHero.jpg": "/static/media/gorillaHero.16ffc509565bf3aa5400.jpg",
-    "static/media/royalty-free-license.png": "/static/media/royalty-free-license.f3d852d214f9c7999179.png",
-    "static/media/bof.jpg": "/static/media/bof.8dbb8ce2140bb3f6c0fc.jpg",
-    "static/media/pete.jpg": "/static/media/pete.a7fdb239ec27fb7e75d3.jpg",
-    "static/media/mongerHoncho.png": "/static/media/mongerHoncho.47bb0f9919f0f8066510.png",
-    "static/media/CryBaby.jpg": "/static/media/CryBaby.faaf850a62c0cd7a244c.jpg",
-    "static/media/morie.png": "/static/media/morie.02690a9096fcd6002f82.png",
-    "static/media/logo-certified-smokeable.png": "/static/media/logo-certified-smokeable.081370e47891fc480433.png",
-    "static/media/mongamonga_-Royalty-Free-License.pdf": "/static/media/mongamonga_-Royalty-Free-License.01f3548fad7ab815eb3c.pdf",
-    "index.html": "/index.html",
-    "main.ef68903a.css.map": "/static/css/main.ef68903a.css.map",
-    "main.b98db02b.js.map": "/static/js/main.b98db02b.js.map",
-    "787.e135ee95.chunk.js.map": "/static/js/787.e135ee95.chunk.js.map"
+    "main.css": "/beat-store-react/static/css/main.ef68903a.css",
+    "main.js": "/beat-store-react/static/js/main.e257698b.js",
+    "static/js/787.e135ee95.chunk.js": "/beat-store-react/static/js/787.e135ee95.chunk.js",
+    "static/media/cbPreview.mp3": "/beat-store-react/static/media/cbPreview.b829af31d0679590f06c.mp3",
+    "static/media/watermelonPreview.mp3": "/beat-store-react/static/media/watermelonPreview.23eef2a539efa10adbfe.mp3",
+    "static/media/bofPreview.mp3": "/beat-store-react/static/media/bofPreview.b0d8ffdd4d03b3ccb7e2.mp3",
+    "static/media/gorillaHero.jpg": "/beat-store-react/static/media/gorillaHero.16ffc509565bf3aa5400.jpg",
+    "static/media/royalty-free-license.png": "/beat-store-react/static/media/royalty-free-license.f3d852d214f9c7999179.png",
+    "static/media/bof.jpg": "/beat-store-react/static/media/bof.8dbb8ce2140bb3f6c0fc.jpg",
+    "static/media/pete.jpg": "/beat-store-react/static/media/pete.a7fdb239ec27fb7e75d3.jpg",
+    "static/media/mongerHoncho.png": "/beat-store-react/static/media/mongerHoncho.47bb0f9919f0f8066510.png",
+    "static/media/CryBaby.jpg": "/beat-store-react/static/media/CryBaby.faaf850a62c0cd7a244c.jpg",
+    "static/media/morie.png": "/beat-store-react/static/media/morie.02690a9096fcd6002f82.png",
+    "static/media/logo-certified-smokeable.png": "/beat-store-react/static/media/logo-certified-smokeable.081370e47891fc480433.png",
+    "static/media/mongamonga_-Royalty-Free-License.pdf": "/beat-store-react/static/media/mongamonga_-Royalty-Free-License.01f3548fad7ab815eb3c.pdf",
+    "index.html": "/beat-store-react/index.html",
+    "main.ef68903a.css.map": "/beat-store-react/static/css/main.ef68903a.css.map",
+    "main.e257698b.js.map": "/beat-store-react/static/js/main.e257698b.js.map",
+    "787.e135ee95.chunk.js.map": "/beat-store-react/static/js/787.e135ee95.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ef68903a.css",
-    "static/js/main.b98db02b.js"
+    "static/js/main.e257698b.js"
   ]
 }
