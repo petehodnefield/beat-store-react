@@ -1,0 +1,22 @@
+:root {
+  --primary: #74b6e0;
+  --secondary: #fbfff2;
+  --tertiary: #252422;
+  --accent1: #033f63;
+  --accent2: #3a90cc;
+  --black: #000000;
+}
+.ham__wrapper {
+  position: absolute;
+  top: 2.1rem;
+  left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.ham__line {
+  height: 0.2rem;
+  width: 1.75rem;
+  border-radius: 8px;
+  margin-bottom: 0.25rem;
+  background-color: var(--secondary);
+}
