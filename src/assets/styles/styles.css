@@ -40,7 +40,7 @@ h5,
 h6 {
   line-height: 125%;
   font-weight: 400;
-
+  margin: 0;
   font-family: "Poppins", sans-serif;
 }
 p,
@@ -48,7 +48,7 @@ a,
 li {
   line-height: 150%;
   font-weight: 400;
-
+  margin: 0;
   font-family: "Inter", sans-serif;
 }
 a {
@@ -76,4 +76,5 @@ header {
   justify-content: center;
   align-items: center;
   position: relative;
+  padding: 1.5rem 0;
 }

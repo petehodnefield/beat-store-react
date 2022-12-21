@@ -1,0 +1,26 @@
+:root {
+  --primary: #74b6e0;
+  --secondary: #fbfff2;
+  --tertiary: #252422;
+  --accent1: #033f63;
+  --accent2: #3a90cc;
+  --black: #000000;
+}
+.ham__menu {
+  position: absolute;
+  background-color: var(--secondary);
+  color: var(--black);
+  height: 100vh;
+  top: 0;
+  left: 0;
+  width: 60vw;
+  animation: ham-menu-open 250ms;
+}
+@keyframes ham-menu-open {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60vw;
+  }
+}
