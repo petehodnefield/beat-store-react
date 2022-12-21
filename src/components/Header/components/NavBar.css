@@ -1,0 +1,31 @@
+.nav {
+  display: none;
+}
+
+.nav__ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0;
+}
+.nav__a {
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+.nav__triangle {
+  display: flex;
+  align-items: center;
+}
+.triangle-icon {
+  /* width: 1.5rem; */
+  /* height: 1.5rem; */
+}
+@media screen and (min-width: 1080px) {
+  .nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    width: 0;
+  }
+}

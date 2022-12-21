@@ -2,18 +2,24 @@ import React from "react";
 import "./Home.css";
 import video from "../../assets/audio/video.mp4";
 const Home = () => {
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    window.location.replace("/thank-you");
+  };
   return (
     <div className="content-wrapper">
-      <section className="about">
-        <h3 className="home__header">Hi, I am mongamonga_</h3>
-        <p className="home__text">
-          I am a guitar player with a strong understanding of chord
-          progressions, music theory, and techniques for manipulating the guitar
-          to create a range of sounds and styles. I can play a variety of
-          genres, from rock and folk to jazz and blues, and specialize in
-          writing loops for producers.
-        </p>
-        <button className="btn btn-cta">Get in touch</button>
+      <section className="about margin">
+        <div>
+          <h3 className="home__header">Hi, I am mongamonga_</h3>
+          <p className="home__text">
+            I am a guitar player with a strong understanding of chord
+            progressions, music theory, and techniques for manipulating the
+            guitar to create a range of sounds and styles. I can play a variety
+            of genres, from rock and folk to jazz and blues, and specialize in
+            writing loops for producers.
+          </p>
+          <button className="btn btn-cta">Get in touch</button>
+        </div>
         <div className="home__img-div">
           <img
             className="home__img"
@@ -21,18 +27,20 @@ const Home = () => {
           />
         </div>
       </section>
-      <section>
+      <section className="about">
         {" "}
-        <h3 className="home__header">Loops</h3>
-        <p className="home__text">
-          I have been playing guitar for 9 years and previously studied electric
-          guitar at the Berklee School of Music in Boston, MA. I have written
-          hundreds of loops in the styles of artists such as Juice WRLD and
-          Gunna, and have mastered melody writing. I am a valuable asset to any
-          producer looking to incorporate live instrumentation into their
-          tracks.
-        </p>
-        <button className="btn btn-cta">50+ royalty-free loops</button>
+        <div>
+          <h3 className="home__header">Loops</h3>
+          <p className="home__text">
+            I have been playing guitar for 9 years and previously studied
+            electric guitar at the Berklee School of Music in Boston, MA. I have
+            written hundreds of loops in the styles of artists such as Juice
+            WRLD and Gunna, and have mastered melody writing. I am a valuable
+            asset to any producer looking to incorporate live instrumentation
+            into their tracks.
+          </p>
+          <button className="btn btn-cta">50+ royalty-free loops</button>
+        </div>
         <div className="home__video-div">
           <video className="home__video" src={video} autoPlay></video>
         </div>
@@ -44,7 +52,7 @@ const Home = () => {
         </p>
         <article className="home__form-wrapper">
           <h4 className="home__form-header"> Custom Loops</h4>
-          <form>
+          <form onSubmit={(e) => handleFormSubmit(e)}>
             <div className="form__il-wrapper">
               <label className="form__label">Name</label>
               <input

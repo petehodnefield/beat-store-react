@@ -3,6 +3,8 @@ import "./assets/styles/styles.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Home from "./pages/Home/Home";
+import Footer from "./components/Footer/Footer";
+import ThankYou from "./pages/ThankYou/ThankYou";
 
 function App() {
   useEffect(() => {
@@ -10,14 +12,12 @@ function App() {
   });
   return (
     <Router>
-      <div className="App">
-        <Header></Header>{" "}
-        <div className="padding-bottom">
-          <Routes>
-            <Route path="/" element={<Home></Home>}></Route>
-          </Routes>
-        </div>
-      </div>
+      <Header></Header>{" "}
+      <Routes>
+        <Route path="/" element={<Home></Home>}></Route>
+        <Route path="/thank-you" element={<ThankYou></ThankYou>}></Route>
+      </Routes>
+      <Footer></Footer>
     </Router>
   );
 }

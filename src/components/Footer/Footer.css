@@ -1,0 +1,24 @@
+:root {
+  --primary: #74b6e0;
+  --secondary: #fbfff2;
+  --tertiary: #252422;
+  --accent1: #033f63;
+  --accent2: #3a90cc;
+  --black: #000000;
+}
+footer {
+  text-align: center;
+  padding: 4rem 0 1.5rem;
+  margin: 0 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__link {
+  margin-bottom: 0.25rem;
+}
+.footer__copyright {
+  font-size: 0.75rem;
+}

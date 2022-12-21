@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 1.5rem 0;
+}
+@media screen and (min-width: 1080px) {
+  .header {
+    justify-content: space-between;
+    margin: 0 2rem;
+    align-items: flex-end;
+  }
+  .header__h1 {
+    flex-grow: 1;
+    width: 0;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+}
