@@ -45,7 +45,8 @@ h6 {
 }
 p,
 a,
-li {
+li,
+button {
   line-height: 150%;
   font-weight: 400;
   margin: 0;
@@ -70,11 +71,27 @@ ul {
 .bold {
   font-weight: 600;
 }
-
+.btn {
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  color: var(--secondary);
+  padding: 0.125rem 1.25rem;
+}
+.btn-cta {
+  background-color: var(--accent1);
+}
+.btn-form {
+  background-color: var(--primary);
+}
 header {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   padding: 1.5rem 0;
+}
+
+.content-wrapper {
+  margin: 0 0.75rem;
 }
