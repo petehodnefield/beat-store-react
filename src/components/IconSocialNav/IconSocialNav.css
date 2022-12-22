@@ -1,4 +1,4 @@
-.icon-wrapper {
+.icon-wrapper-nav {
   display: none;
 }
 .icon-social {
@@ -11,7 +11,7 @@
   transition: 200ms ease-out;
 }
 @media screen and (min-width: 1080px) {
-  .icon-wrapper {
+  .icon-wrapper-nav {
     margin-bottom: 0.25rem;
     flex-grow: 1;
     width: 0;

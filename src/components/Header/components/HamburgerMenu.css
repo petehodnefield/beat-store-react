@@ -24,3 +24,24 @@
     width: 60vw;
   }
 }
+.ham__menuul {
+  padding: 0;
+  margin-left: 1.75rem;
+  margin-top: 6rem;
+}
+.ham__menuli {
+  margin-bottom: 0.5rem;
+}
+.ham__menua {
+  color: var(--black);
+  font-size: 0.75rem;
+}
+.ham__menua:hover,
+.icon-social-ham:hover {
+  color: var(--primary);
+  transition: 100ms;
+}
+
+.icon-social-ham {
+  color: var(--black);
+}

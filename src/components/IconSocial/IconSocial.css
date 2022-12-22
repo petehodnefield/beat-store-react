@@ -1,7 +1,5 @@
 .icon-wrapper {
   margin-bottom: 0.25rem;
-  flex-grow: 1;
-  width: 0;
   display: flex;
   gap: 1rem;
   justify-content: flex-end;

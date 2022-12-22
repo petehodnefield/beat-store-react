@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 import "./IconSocialNav.css";
 const IconSocialNav = () => {
   return (
-    <div className="icon-wrapper">
+    <div className="icon-wrapper-nav">
       <a href="https://www.tiktok.com/@mongamonga_?lang=en" target="_blank">
         <Icon className="icon-social" icon="ic:baseline-tiktok" />
       </a>

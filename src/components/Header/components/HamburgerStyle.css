@@ -12,15 +12,16 @@
   left: 1.5rem;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .ham__closed {
   transform: rotate(0deg);
-  transition: 250ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transition: 100ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 .ham__open {
   transform: rotate(-90deg);
-  transition: 250ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transition: 50ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
   z-index: 100000;
 }
 .ham__line {

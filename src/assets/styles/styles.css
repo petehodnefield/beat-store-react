@@ -99,3 +99,19 @@ ul {
     margin: 0 8rem;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .content-wrapper {
+    margin: 0 12rem;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .content-wrapper {
+    margin: 0 20rem;
+  }
+}
+@media screen and (min-width: 2200px) {
+  .content-wrapper {
+    margin: 0 32rem;
+  }
+}
