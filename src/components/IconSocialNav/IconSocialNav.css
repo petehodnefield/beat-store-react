@@ -1,22 +1,21 @@
 .icon-wrapper-nav {
   display: none;
 }
-.icon-social {
-  height: 2rem;
-  width: 2rem;
+.icon-social-nav {
+  height: 1.75rem;
+  width: 1.75rem;
   cursor: pointer;
 }
-.icon-social:hover {
+.icon-social-nav:hover {
   color: var(--accent1);
-  transition: 200ms ease-out;
+  transition: 100ms ease-out;
 }
 @media screen and (min-width: 1080px) {
   .icon-wrapper-nav {
-    margin-bottom: 0.25rem;
     flex-grow: 1;
     width: 0;
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     justify-content: flex-end;
     align-items: flex-end;
   }

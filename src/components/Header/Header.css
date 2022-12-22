@@ -8,7 +8,7 @@
 @media screen and (min-width: 1080px) {
   .header {
     justify-content: space-between;
-    margin: 0 2rem;
+    margin: 0.25rem 2rem;
     align-items: flex-end;
   }
   .header__h1 {
@@ -17,5 +17,16 @@
   }
   h1 {
     font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    margin: 0.5rem 4rem;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .header {
+    margin: 0.5rem 5rem;
   }
 }
