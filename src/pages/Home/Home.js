@@ -8,7 +8,7 @@ const Home = () => {
   };
   return (
     <div className="content-wrapper">
-      <section className="about margin">
+      <section id="about" className="about margin">
         <div className="about__text-wrapper">
           <h3 className="home__header">Hi, I am mongamonga_</h3>
           <p className="home__text">
@@ -29,7 +29,7 @@ const Home = () => {
       </section>
       <div className="loop__content-wrapper">
         <div className="loop__text-form-wrapper">
-          <section className="about">
+          <section id="loops" className="about">
             {" "}
             <div className="about__loop-text-wrapper">
               <h3 className="home__header">Loops</h3>
@@ -44,10 +44,10 @@ const Home = () => {
               <button className="btn btn-cta">50+ royalty-free loops</button>
             </div>
             <div className="home__video-div-mobile">
-              <video className="home__video" src={video} autoPlay></video>
+              <video className="home__video" src={video} autoPlay loop></video>
             </div>
           </section>
-          <section className="form">
+          <section id="contact" className="form">
             <p className="bold home__danger">
               If you are an established producer, fill out this form and we can
               do exclusive collaborations.
@@ -108,7 +108,7 @@ const Home = () => {
           </section>
         </div>
         <div className="home__video-div-comp">
-          <video className="home__video" src={video} autoPlay></video>
+          <video className="home__video" src={video} autoPlay loop></video>
         </div>
       </div>
     </div>

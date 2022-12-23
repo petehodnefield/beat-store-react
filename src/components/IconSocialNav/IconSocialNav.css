@@ -8,7 +8,7 @@
 }
 .icon-social-nav:hover {
   color: var(--accent1);
-  transition: 100ms ease-out;
+  transition: 1000ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 @media screen and (min-width: 1080px) {
   .icon-wrapper-nav {

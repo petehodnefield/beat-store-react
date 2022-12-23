@@ -7,13 +7,16 @@
   --black: #000000;
 }
 .ham__menu {
-  position: absolute;
+  position: fixed;
   background-color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: var(--black);
   height: 100vh;
   top: 0;
   left: 0;
-  width: 60vw;
+  width: 50vw;
   animation: ham-menu-open 250ms;
 }
 @keyframes ham-menu-open {
@@ -21,12 +24,22 @@
     width: 0%;
   }
   100% {
-    width: 60vw;
+    width: 50vw;
   }
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 2rem;
+  height: 100vh;
 }
 .ham__menuul {
   padding: 0;
-  margin-left: 1.75rem;
+  width: 100%;
+  margin-left: 3rem;
   margin-top: 6rem;
 }
 .ham__menuli {
@@ -34,14 +47,53 @@
 }
 .ham__menua {
   color: var(--black);
-  font-size: 0.75rem;
+  font-size: 0.875rem;
+  animation: opacity 750ms;
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .ham__menua:hover,
 .icon-social-ham:hover {
   color: var(--primary);
-  transition: 100ms;
+  transition: 1000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.icon-wrapper-ham {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-basis: 40%;
+  gap: 0.75rem;
+  height: 100vh;
+  margin-bottom: 0.5rem;
 }
 
 .icon-social-ham {
   color: var(--black);
+  height: 2rem;
+  width: 2rem;
+  animation: opacity 1300ms;
+}
+
+@media screen and (min-width: 768px) {
+  .ham__menuul {
+    margin-left: 5rem;
+  }
+  .ham__menua {
+    font-size: 1rem;
+  }
+  .ham__menuli {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .ham__menu {
+    display: none;
+  }
 }

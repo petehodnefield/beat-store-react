@@ -5,6 +5,8 @@ import Header from "./components/Header/Header";
 import Home from "./pages/Home/Home";
 import Footer from "./components/Footer/Footer";
 import ThankYou from "./pages/ThankYou/ThankYou";
+import Airbit from "./pages/Airbit/Airbit";
+import License from "./pages/License/License";
 
 function App() {
   useEffect(() => {
@@ -16,6 +18,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/thank-you" element={<ThankYou></ThankYou>}></Route>
+        <Route path="/airbit" element={<Airbit></Airbit>}></Route>
+        <Route path="/license" element={<License></License>}></Route>
       </Routes>
       <Footer></Footer>
     </Router>

@@ -1,0 +1,41 @@
+:root {
+  --primary: #74b6e0;
+  --secondary: #fbfff2;
+  --tertiary: #252422;
+  --accent1: #033f63;
+  --accent2: #3a90cc;
+  --black: #000000;
+}
+
+.license-wrapper {
+  margin-top: 4rem;
+}
+.text-header {
+  margin-bottom: 1rem;
+}
+.text-header h3 {
+  margin-bottom: 0.5rem;
+}
+.license__text {
+  margin-bottom: 0.75rem;
+}
+
+.sub__text-wrapper {
+  margin-left: 1rem;
+  display: flex;
+  gap: 0.25rem;
+}
+.main__text-wrapper {
+  gap: 0.25rem;
+}
+
+.license__header {
+  margin-bottom: 1rem;
+}
+.text-section-wrapper {
+  margin-bottom: 0.5rem;
+}
+.text-section-wrapper-line {
+  margin-bottom: 0.75rem;
+  /* display: flex; */
+}

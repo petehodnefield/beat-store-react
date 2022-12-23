@@ -2,6 +2,8 @@ import React from "react";
 import { Icon } from "@iconify/react";
 import "./Footer.css";
 import IconSocial from "../IconSocial/IconSocial";
+import { Link } from "react-router-dom";
+import { License } from "../../pages/License/License";
 const Footer = () => {
   const currentYear = () => {
     const date = new Date();
@@ -10,7 +12,9 @@ const Footer = () => {
   return (
     <footer>
       <IconSocial></IconSocial>
-      <a className="footer__link">royalty-free license</a>
+      <Link to={"/license"} className="footer__link">
+        royalty-free license
+      </Link>
       <p className="footer__copyright">©{currentYear()} MongaMongaBeats LLC</p>
     </footer>
   );

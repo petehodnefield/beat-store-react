@@ -12,5 +12,5 @@
 }
 .icon-social:hover {
   color: var(--accent1);
-  transition: 200ms ease-out;
+  transition: 1000ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
