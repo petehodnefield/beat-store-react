@@ -31,12 +31,12 @@ const NavBar = () => {
     <nav className="nav">
       <ul className="nav__ul">
         <li className="nav__li">
-          <a href="#about" className="nav__a">
+          <a href="/#about" className="nav__a">
             About
           </a>
         </li>
         <li className="nav__li">
-          <a href="#about" className="nav__a">
+          <a href="/#contact" className="nav__a">
             Contact
           </a>
         </li>

@@ -8,7 +8,7 @@
 }
 
 .license-wrapper {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 .text-header {
   margin-bottom: 1rem;
@@ -38,4 +38,9 @@
 .text-section-wrapper-line {
   margin-bottom: 0.75rem;
   /* display: flex; */
+}
+@media screen and (min-width: 1080px) {
+  .license-wrapper {
+    margin-top: 4rem;
+  }
 }

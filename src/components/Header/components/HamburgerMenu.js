@@ -22,20 +22,16 @@ const HamburgerMenu = ({ isOpen, setIsOpen }) => {
               Contact
             </a>
           </li>
-          <li onClick={() => setIsOpen(false)} className="ham__menuli">
-            <a className="ham__menua" href="/#loops">
-              Loops
-            </a>
-          </li>
+
           <li onClick={() => setIsOpen(false)} className="ham__menuli">
             <Link className="ham__menua" to="/airbit">
               Airbit Store
             </Link>
           </li>
           <li onClick={() => setIsOpen(false)} className="ham__menuli">
-            <a className="ham__menua" href="/license">
+            <Link className="ham__menua" to="/license">
               Royalty-Free License
-            </a>
+            </Link>
           </li>
         </ul>
         <div className="icon-wrapper-ham">

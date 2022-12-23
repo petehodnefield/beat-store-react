@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import video from "../../assets/audio/video.mp4";
+import { Link } from "react-router-dom";
 const Home = () => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -18,7 +19,9 @@ const Home = () => {
             of genres, from rock and folk to jazz and blues, and specialize in
             writing loops for producers.
           </p>
-          <button className="btn btn-cta">Get in touch</button>
+          <a href="#contact">
+            <button className="btn btn-cta">Get in touch</button>
+          </a>
         </div>
         <div className="home__img-div">
           <img
@@ -41,70 +44,74 @@ const Home = () => {
                 valuable asset to any producer looking to incorporate live
                 instrumentation into their tracks.
               </p>
-              <button className="btn btn-cta">50+ royalty-free loops</button>
+              <Link to={"/airbit"}>
+                <button className="btn btn-cta">50+ royalty-free loops</button>
+              </Link>
             </div>
             <div className="home__video-div-mobile">
               <video className="home__video" src={video} autoPlay loop></video>
             </div>
           </section>
           <section id="contact" className="form">
-            <p className="bold home__danger">
-              If you are an established producer, fill out this form and we can
-              do exclusive collaborations.
-            </p>
-            <article className="home__form-wrapper">
-              <h4 className="home__form-header"> Custom Loops</h4>
-              <form onSubmit={(e) => handleFormSubmit(e)}>
-                <div className="form__il-wrapper">
-                  <label className="form__label">Name</label>
-                  <input
-                    name="name"
-                    type="text"
-                    required
-                    className="form__input"
-                  ></input>
-                </div>
-                <div className="form__il-wrapper">
-                  <label className="form__label">Email Address</label>
-                  <input
-                    name="email"
-                    type="email"
-                    required
-                    className="form__input"
-                  ></input>
-                </div>
-                <div className="form__il-wrapper">
-                  <label className="form__label">Instagram</label>
-                  <input
-                    name="instagram"
-                    type="text"
-                    required
-                    className="form__input"
-                  ></input>
-                </div>
-                <div className="form__il-wrapper">
-                  <label className="form__label">Beatstars</label>
-                  <input
-                    name="beatstars"
-                    type="text"
-                    required
-                    className="form__input"
-                  ></input>
-                </div>
-                <div className="form__il-wrapper">
-                  <label className="form__label">Message</label>
-                  <textarea
-                    name="message"
-                    type="text"
-                    required
-                    className="form__input text-area"
-                  ></textarea>
-                </div>
-                <button className="btn btn-form" type="submit">
-                  Send
-                </button>
-              </form>
-            </article>
+            <a name="contact">
+              <p className="bold home__danger">
+                If you are an established producer, fill out this form and we
+                can do exclusive collaborations.
+              </p>
+              <article className="home__form-wrapper">
+                <h4 className="home__form-header"> Custom Loops</h4>
+                <form onSubmit={(e) => handleFormSubmit(e)}>
+                  <div className="form__il-wrapper">
+                    <label className="form__label">Name</label>
+                    <input
+                      name="name"
+                      type="text"
+                      required
+                      className="form__input"
+                    ></input>
+                  </div>
+                  <div className="form__il-wrapper">
+                    <label className="form__label">Email Address</label>
+                    <input
+                      name="email"
+                      type="email"
+                      required
+                      className="form__input"
+                    ></input>
+                  </div>
+                  <div className="form__il-wrapper">
+                    <label className="form__label">Instagram</label>
+                    <input
+                      name="instagram"
+                      type="text"
+                      required
+                      className="form__input"
+                    ></input>
+                  </div>
+                  <div className="form__il-wrapper">
+                    <label className="form__label">Beatstars</label>
+                    <input
+                      name="beatstars"
+                      type="text"
+                      required
+                      className="form__input"
+                    ></input>
+                  </div>
+                  <div className="form__il-wrapper">
+                    <label className="form__label">Message</label>
+                    <textarea
+                      name="message"
+                      type="text"
+                      required
+                      className="form__input text-area"
+                    ></textarea>
+                  </div>
+                  <button className="btn btn-form" type="submit">
+                    Send
+                  </button>
+                </form>
+              </article>
+            </a>
           </section>
         </div>
         <div className="home__video-div-comp">
