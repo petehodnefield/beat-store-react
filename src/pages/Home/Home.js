@@ -23,12 +23,7 @@ const Home = () => {
             <button className="btn btn-cta">Get in touch</button>
           </a>
         </div>
-        <div className="home__img-div">
-          <img
-            className="home__img"
-            src={require("../../assets/images/pete.jpg")}
-          />
-        </div>
+        <div className="home__img-div"></div>
       </section>
       <div className="loop__content-wrapper">
         <div className="loop__text-form-wrapper">

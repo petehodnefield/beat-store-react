@@ -2,7 +2,7 @@
   --primary: #74b6e0;
   --secondary: #fbfff2;
   --tertiary: #252422;
-  --accent1: #033f63;
+  --accent1: #0479c0;
   --accent2: #3a90cc;
   --black: #000000;
 }
@@ -90,6 +90,10 @@ ul {
   border-radius: 4px;
   color: var(--secondary);
   padding: 0.125rem 1.25rem;
+  box-shadow: inset 0px 15px 50px -50px var(--secondary),
+    inset 15px 0px 50px -50px var(--secondary),
+    inset -20px 0px 50px -50px var(--black),
+    inset 0px -20px 50px -50px var(--black);
 }
 .btn:hover {
   opacity: 0.8;

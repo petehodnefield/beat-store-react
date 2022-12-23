@@ -34,7 +34,7 @@ const HamburgerMenu = ({ isOpen, setIsOpen }) => {
             </Link>
           </li>
         </ul>
-        <div className="icon-wrapper-ham">
+        {/* <div className="icon-wrapper-ham">
           <a
             href="https://www.tiktok.com/@mongamonga_?lang=en"
             rel="noreferrer"
@@ -56,7 +56,7 @@ const HamburgerMenu = ({ isOpen, setIsOpen }) => {
           >
             <Icon className="icon-social-ham" icon="mdi:instagram" />
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );
