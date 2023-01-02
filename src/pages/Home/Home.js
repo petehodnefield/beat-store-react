@@ -110,7 +110,13 @@ const Home = () => {
           </section>
         </div>
         <div className="home__video-div-comp">
-          <video className="home__video" src={video} autoPlay loop></video>
+          <video
+            className="home__video"
+            src={require("../../assets/video/video.mov")}
+            type="video/mov"
+            controls
+            loop
+          ></video>
         </div>
       </div>
     </div>
