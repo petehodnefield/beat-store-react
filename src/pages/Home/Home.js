@@ -111,6 +111,7 @@ const Home = () => {
         </div>
         <div className="home__video-div-comp">
           <video
+            playsInline
             className="home__video"
             src={require("../../assets/video/video.mov")}
             type="video/mov"
