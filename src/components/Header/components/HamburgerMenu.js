@@ -33,6 +33,11 @@ const HamburgerMenu = ({ isOpen, setIsOpen }) => {
               Royalty-Free License
             </Link>
           </li>
+          <li onClick={() => setIsOpen(false)} className="ham__menuli">
+            <Link className="ham__menua" to="/50-license">
+              50/50 License
+            </Link>
+          </li>
         </ul>
         {/* <div className="icon-wrapper-ham">
           <a

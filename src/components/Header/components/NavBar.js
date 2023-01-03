@@ -21,6 +21,13 @@ const LoopDropdown = ({ isHovered, setIsHovered }) => {
       >
         <li className="dropdown__li">Royalty-Free License</li>{" "}
       </Link>
+      <Link
+        onClick={() => setIsHovered(false)}
+        className="h5  dropdown__a"
+        to={"/50-license"}
+      >
+        <li className="dropdown__li">50/50 License</li>{" "}
+      </Link>
     </ul>
   );
 };

@@ -7,10 +7,11 @@ import Footer from "./components/Footer/Footer";
 import ThankYou from "./pages/ThankYou/ThankYou";
 import Airbit from "./pages/Airbit/Airbit";
 import License from "./pages/License/License";
+import FiftyFiftyLicense from "./pages/FiftyFiftyLicense/FiftyFiftyLicense";
 
 function App() {
   useEffect(() => {
-    document.title = "mongamonga_";
+    document.title = "mongamonga";
   });
   return (
     <Router>
@@ -20,6 +21,7 @@ function App() {
         <Route path="/thank-you" element={<ThankYou></ThankYou>}></Route>
         <Route path="/airbit" element={<Airbit></Airbit>}></Route>
         <Route path="/license" element={<License></License>}></Route>
+        <Route path="/50-license" element={<FiftyFiftyLicense />}></Route>
       </Routes>
       <Footer></Footer>
     </Router>
