@@ -28,6 +28,10 @@ span {
   margin: 0;
   font-family: "Inter", sans-serif;
 }
+label,
+input {
+  font-family: "Inter", sans-serif;
+}
 h1,
 .h1 {
   font-size: 2rem;
@@ -89,6 +93,8 @@ ul {
   cursor: pointer;
   border-radius: 4px;
   color: var(--secondary);
+  font-weight: 600;
+
   padding: 0.125rem 1.25rem;
   box-shadow: inset 0px 15px 50px -50px var(--secondary),
     inset 15px 0px 50px -50px var(--secondary),
@@ -101,9 +107,13 @@ ul {
 }
 .btn-cta {
   background-color: var(--accent1);
+  height: 2.5rem;
+  width: 10rem;
 }
 .btn-form {
   background-color: var(--primary);
+  height: 2.5rem;
+  width: 10rem;
 }
 
 .content-wrapper {

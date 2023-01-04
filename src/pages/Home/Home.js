@@ -11,7 +11,7 @@ const Home = () => {
     <div className="content-wrapper">
       <section id="about" className="about margin">
         <div className="about__text-wrapper">
-          <h3 className="home__header">Hi, I am mongamonga_</h3>
+          <h3 className="home__header">Hi, I am mongamonga</h3>
           <p className="home__text">
             I am a guitar player with a strong understanding of chord
             progressions, music theory, and techniques for manipulating the
@@ -40,11 +40,17 @@ const Home = () => {
                 instrumentation into their tracks.
               </p>
               <Link to={"/airbit"}>
-                <button className="btn btn-cta">50+ royalty-free loops</button>
+                <button className="btn btn-cta">50+ loops</button>
               </Link>
             </div>
             <div className="home__video-div-mobile">
-              <video className="home__video" src={video} autoPlay loop></video>
+              <video
+                className="home__video"
+                src={require("../../assets/video/video.mov")}
+                loop
+                controls
+                playsInline
+              ></video>
             </div>
           </section>
           <section id="contact" className="form">

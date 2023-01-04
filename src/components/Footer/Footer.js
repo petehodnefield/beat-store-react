@@ -12,8 +12,8 @@ const Footer = () => {
   return (
     <footer>
       <IconSocial></IconSocial>
-      <Link to={"/license"} className="footer__link">
-        royalty-free license
+      <Link to={"/50-license"} className="footer__link ">
+        50/50 license
       </Link>
       <p className="footer__copyright">©{currentYear()} MongaMongaBeats LLC</p>
     </footer>

@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header className="header">
       <a className="header__h1" href="/">
-        <h1>mongamonga_</h1>
+        <h1>mongamonga</h1>
       </a>
       <Hamburger isOpen={isOpen} setIsOpen={setIsOpen}></Hamburger>
       {isOpen ? <HamburgerMenu isOpen={isOpen} setIsOpen={setIsOpen} /> : ""}

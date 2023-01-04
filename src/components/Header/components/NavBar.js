@@ -13,20 +13,20 @@ const LoopDropdown = ({ isHovered, setIsHovered }) => {
         to={"/airbit"}
       >
         <li className="dropdown__li">Airbit Store</li>
-      </Link>
-      <Link
-        onClick={() => setIsHovered(false)}
-        className="h5  dropdown__a"
-        to={"/license"}
-      >
-        <li className="dropdown__li">Royalty-Free License</li>{" "}
-      </Link>
+      </Link>{" "}
       <Link
         onClick={() => setIsHovered(false)}
         className="h5  dropdown__a"
         to={"/50-license"}
       >
         <li className="dropdown__li">50/50 License</li>{" "}
+      </Link>
+      <Link
+        onClick={() => setIsHovered(false)}
+        className="h5  dropdown__a"
+        to={"/rf-license"}
+      >
+        <li className="dropdown__li">Royalty-Free License</li>{" "}
       </Link>
     </ul>
   );

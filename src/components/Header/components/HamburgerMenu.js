@@ -29,7 +29,7 @@ const HamburgerMenu = ({ isOpen, setIsOpen }) => {
             </Link>
           </li>
           <li onClick={() => setIsOpen(false)} className="ham__menuli">
-            <Link className="ham__menua" to="/license">
+            <Link className="ham__menua" to="/rf-license">
               Royalty-Free License
             </Link>
           </li>

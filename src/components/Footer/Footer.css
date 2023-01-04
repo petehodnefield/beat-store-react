@@ -18,6 +18,7 @@ footer {
 
 .footer__link {
   margin-bottom: 0.25rem;
+  font-style: italic;
 }
 .footer__link:hover {
   color: var(--accent1);
