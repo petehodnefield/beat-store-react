@@ -94,7 +94,7 @@ ul {
   border-radius: 4px;
   color: var(--secondary);
   font-weight: 600;
-
+  font-size: 0.875rem;
   padding: 0.125rem 1.25rem;
   box-shadow: inset 0px 15px 50px -50px var(--secondary),
     inset 15px 0px 50px -50px var(--secondary),
@@ -112,8 +112,9 @@ ul {
 }
 .btn-form {
   background-color: var(--primary);
-  height: 2.5rem;
-  width: 10rem;
+  height: 3rem;
+  width: 100%;
+  margin-top: 1rem;
 }
 
 .content-wrapper {
